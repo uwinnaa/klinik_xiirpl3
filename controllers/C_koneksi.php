@@ -23,7 +23,7 @@ class C_koneksi{
 
 }
 
-//inisialisasi objek
+//inisialisasi objek,harus diluar kelas
 $koneksi = new C_koneksi();
 //memanggil method atau fungsi yang ada didalam kelas c_koneksi
 $koneksi->connection();
