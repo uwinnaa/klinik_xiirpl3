@@ -93,13 +93,15 @@ class C_login{
 
         }
         
-
+        //membuat fungsi untuk logout user
+        public function logout(){
+            
+        }
     }
+
     
-    //membuat fungsi untuk logout user
-    public function logout(){
 
-    }
+    
 
 
 

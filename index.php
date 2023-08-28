@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,9 +33,9 @@
                     <div class="col-lg-12">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Login</h1>
                             </div>
-                            <form action="routers/r_login.php?aksi=login" method="POST" class="user">
+                            <form action="routers/r_login.php?aksi=register" method="POST" class="user">
                                 
                                 <!-- ini form id yang menerima inputan id dari user  -->
                                 <div class="form-group">
@@ -44,16 +43,10 @@
                                         placeholder="id" name="id" hidden>
                                 </div>
 
-                                <!-- ini form nama yang menerima inputan nama dari user  -->
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="nama"
-                                        placeholder="Nama Lengkap tenpa Spasi" name="nama">
-                                </div>
-
                                 <!-- ini form email yang menerima inputan email dari user  -->
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="email"
-                                        placeholder="Email Address" name="email">
+                                    <input type="text" class="form-control form-control-user" id="email"
+                                        placeholder="email" name="email">
                                 </div>
 
                                 <!-- ini form password yang menerima inputan password dari user  -->
@@ -69,11 +62,11 @@
                                 </div>
 
                                 <!-- <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                    login Account
+                                    Register Account
                                 </a> -->
 
                                 <div class="input-field">
-                                    <input type="submit" class="btn btn-primary btn-user btn-block" value="login Account" id="" name="login">
+                                    <input type="submit" class="btn btn-primary btn-user btn-block" value="Login" id="" name="Login">
                                 </div>
 
                                 <hr>
@@ -99,6 +92,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="assets/js/sb-admin-2.min.js"></script>
+
 
 </body>
 
