@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //untuk menhubungkan file c koneksi kedalam c login
     include_once 'C_koneksi.php';
 
@@ -56,8 +56,8 @@ class C_login{
                     if($data['role'] == 'admin') {
                         
                         //untuk menampug data dari query database yang akan digunakan ketika halaman admin/user setelah proses login berhasil
-                        $_SESSION['data'] = $data;
-                        $_SESSION['role'] = $data['role'];
+                        $_SESSION["data"] = $data;
+                        $_SESSION["role"] = $data['role'];
 
                         //memindahkan halaman ke halaman home
                         header("Location: ../views/home.php");
@@ -68,8 +68,8 @@ class C_login{
                     //untuk mengecek apakah posisi login sebagai user,untuk mengecek apakah role user iu sebagai user atau bukan
                     } elseif ($data['role'] == 'user') {
 
-                        $_SESSION['data'] = $data;
-                        $_SESSION['role'] = $data['role'];
+                        $_SESSION["data"] = $data;
+                        $_SESSION["role"] = $data['role'];
 
 
                         header("Location: ../views/home_user.php");

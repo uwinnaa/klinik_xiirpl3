@@ -36,8 +36,8 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form action="routers/r_login.php?aksi=login" method="POST" class="user">
-                                
+                            <form action="routers/r_login.php?aksi=register" method="POST" class="user">
+
                                 <!-- ini form id yang menerima inputan id dari user  -->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="id"
@@ -69,18 +69,18 @@
                                 </div>
 
                                 <!-- <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                    login Account
+                                    register Account
                                 </a> -->
 
                                 <div class="input-field">
-                                    <input type="submit" class="btn btn-primary btn-user btn-block" value="login Account" id="" name="login">
+                                    <input type="submit" class="btn btn-primary btn-user btn-block" value="register Account" id="register" name="register">
                                 </div>
 
                                 <hr>
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="login.html">Already have an account? Login!</a>
+                                <a class="small" href="index.php">Already have an account? Login!</a>
                             </div>
                         </div>
                     </div>

@@ -35,18 +35,13 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Login</h1>
                             </div>
-                            <form action="routers/r_login.php?aksi=register" method="POST" class="user">
+                            <form action="routers/r_login.php?aksi=login" method="POST" class="user">
                                 
-                                <!-- ini form id yang menerima inputan id dari user  -->
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="id"
-                                        placeholder="id" name="id" hidden>
-                                </div>
 
                                 <!-- ini form email yang menerima inputan email dari user  -->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="email"
-                                        placeholder="email" name="email">
+                                        placeholder="Email Address" name="email">
                                 </div>
 
                                 <!-- ini form password yang menerima inputan password dari user  -->
@@ -55,25 +50,17 @@
                                         placeholder="password" name="password">
                                 </div>
 
-                                <!-- ini form role yang menerima inputan role dari user  -->
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="role"
-                                        value="user" name="role" hidden>
-                                </div>
-
-                                <!-- <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                    Register Account
-                                </a> -->
+                            
 
                                 <div class="input-field">
-                                    <input type="submit" class="btn btn-primary btn-user btn-block" value="Login" id="" name="Login">
+                                    <input type="submit" class="btn btn-primary btn-user btn-block" value="Login" id="" name="login">
                                 </div>
 
                                 <hr>
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="login.html">Already have an account? Login!</a>
+                                <a class="small" href="register.php">Register</a>
                             </div>
                         </div>
                     </div>
