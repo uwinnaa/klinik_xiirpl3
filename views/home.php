@@ -322,4 +322,6 @@
     <?php
     //modular untuk memanggil file dari folder template
     include_once 'template/footer.php'; 
+
+    //contohh
  ?>
