@@ -1,7 +1,5 @@
- <?php
-    
-    //modular untuk memanggil file dari folder template
-    include_once 'template/header.php';
+<?php
+include_once 'template/header.php';
     include_once 'template/sidebar.php';
  ?>
  
@@ -182,10 +180,10 @@
                         <div class="topbar-divider d-none d-sm-block"></div>
 
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
+                        <li class="nav-item dropdown no-arrow">   
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $_SESSION['data']['nama'] ?></span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -220,7 +218,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
+                    <!--  -->
                     <h1 class="h3 mb-2 text-gray-800">Tables</h1>
                     <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank"
@@ -322,6 +320,4 @@
     <?php
     //modular untuk memanggil file dari folder template
     include_once 'template/footer.php'; 
-
-    //contohh
  ?>

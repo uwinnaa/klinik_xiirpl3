@@ -1,6 +1,6 @@
 <?php
 session_start();
-//untuk menhubungkan file c koneksi kedalam c login
+//untuk menghubungkan file c koneksi kedalam c login
     include_once 'C_koneksi.php';
 
 //membuat class login
@@ -13,7 +13,7 @@ class C_login{
         //membuat sebuah variabel yang bertipe data objek dari kelas/ file C_koneksi
         $koneksi = new C_koneksi();
 
-        $sql = "INSERT INTO user VALUES ('$id','$nama','$email','$pass','$role','')";
+        $sql = "INSERT INTO user VALUES ('$id','$nama','$email','$pass','$role')";
 
 
         //$sql = "INSERT INTO user VALUES ('$id', '$nama', '$email', '$pass', '$role','')";
@@ -28,7 +28,6 @@ class C_login{
         
         }
         
-        
 
     //membuat fungsi untuk login user
     public function login($email, $pass){
@@ -39,7 +38,7 @@ class C_login{
         //untuk mengecek tombol login sudah ditekan atau di klik oleh user
         if (isset ($_POST['login'])) {
 
-            //untuk menampilkan sema data dari table user berdasarkan email yang yag diinputkan oleh user
+            //untuk menampilkan semua data dari table user berdasarkan email yang yag diinputkan oleh user
             $sql = "SELECT * FROM user WHERE email = '$email'";
 
             $query = mysqli_query($conn->conn(), $sql);
@@ -49,13 +48,13 @@ class C_login{
             //untuk mengecek apakah ada data dari hasil query
             if ($data) {
                 
-                //untuk mengecek atau membandingkan intupan password dari tabel user dengan password dari tabel user
+                //untuk mengecek atau membandingkan inputan password dari tabel user dengan password dari tabel user
                 if (password_verify($pass,$data['password'])) {
                     
                     //untuk mengecek apakah posisi login sebagai admin, untuk mengecek apakah role user itu sebagai admin atau bukan
                     if($data['role'] == 'admin') {
                         
-                        //untuk menampug data dari query database yang akan digunakan ketika halaman admin/user setelah proses login berhasil
+                        //untuk menampung data dari query database yang akan digunakan ketika halaman admin/user setelah proses login berhasil
                         $_SESSION["data"] = $data;
                         $_SESSION["role"] = $data['role'];
 
@@ -65,7 +64,7 @@ class C_login{
 
 
 
-                    //untuk mengecek apakah posisi login sebagai user,untuk mengecek apakah role user iu sebagai user atau bukan
+                    //untuk mengecek apakah posisi login sebagai user,untuk mengecek apakah role user itu sebagai user atau bukan
                     } elseif ($data['role'] == 'user') {
 
                         $_SESSION["data"] = $data;
@@ -86,6 +85,8 @@ class C_login{
             }else {
                 echo "cek username dan password";
             }
+        
+        
             
 
 
@@ -95,16 +96,11 @@ class C_login{
         
         //membuat fungsi untuk logout user
         public function logout(){
-            
+        session_destroy();
+        header("location: ../index.php");
+        exit;    
         }
     }
 
     
-
-    
-
-
-
-
-
 ?>

@@ -1,3 +1,23 @@
+<?php
+//mengecek data login
+if (isset($_SESSION['login'])){
+//jika sbgai admnin
+  if($_SESSION['role'] == 'admin'){
+    header("location: views/home.php");
+//jika sebagai  user
+  }elseif($_SESSION['role'] == 'user'){
+    header("location: views/home_user.php");
+  }
+
+};
+
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +29,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - login</title>
+    <title>KLINIKRPL3</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
