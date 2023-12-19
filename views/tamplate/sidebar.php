@@ -30,7 +30,7 @@
 
                         <!-- Nav Item - Tables -->
              <li class="nav-item active">
-                <a class="nav-link" href="V_obat.php">
+                <a class="nav-link" href="obat.php">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Table Obat</span></a>
             </li>

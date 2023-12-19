@@ -42,7 +42,7 @@ include_once 'tamplate/header.php';
                     <div class="icon icon-3"></div>
                     <h4>Obat</h4>
                     
-                    <a href="V_obat.php">Book Now</a>
+                    <a href="obat.php">Buy</a>
                 </div>
             </div>
                        <div class="col-sm-6 col-md-4 col-lg-3">
@@ -50,7 +50,7 @@ include_once 'tamplate/header.php';
                     <div class="icon icon-8"></div>
                     <h4>Dokter</h4>
                     
-                    <a href="dokter.php">Book Now</a>
+                    <a href="dokter.php">Buy</a>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 d-sm-none d-md-block d-lg-none">

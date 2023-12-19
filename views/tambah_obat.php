@@ -11,7 +11,7 @@ include_once '../controllers/C_Obat.php';
     <!--DataTables Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Form Obat</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Obat</h6>
     </div>
     <div class="card-body">
         <div class=table-responsive>
@@ -21,9 +21,9 @@ include_once '../controllers/C_Obat.php';
                     <div class="col-lg-2"></div>
                         <div class="col-lg-8">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Tambah Obat</h1>
+                                <h1 class="h4 text-gray-900 mb-4">+obat</h1>
                             </div>
-                            <form action="../routers/r_obat.php?aksi=tambah" method="POST" class="user" enctype="multipart/form-data">
+                            <form action="../routers/oobat.php?aksi=tambah" method="POST" class="user" enctype="multipart/form-data">
 
 
                                 <div class="form-group">

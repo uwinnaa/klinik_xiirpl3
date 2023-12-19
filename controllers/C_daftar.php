@@ -19,10 +19,10 @@ class C_daftar{
     return $hasil;
     }
     
-    public function tambah($nama_pasien,$nomor_antrian,$umur,$keluhan) {
+    public function tambah($nama_pasien,$nomor_urut,$umur,$gejala) {
         $conn = new C_koneksi ();
         
-        $sql = "INSERT INTO daftar VALUES('$nama_pasien','$nomor_antrian','$umur','$keluhan')";
+        $sql = "INSERT INTO daftar VALUES('$nama_pasien','$nomor_urut','$umur','$gejala')";
         $query = mysqli_query($conn->conn(), $sql);
         // var_dump($sql);
         // exit;
@@ -50,11 +50,11 @@ class C_daftar{
         return $hasil;
     }
 
-    public function update($nama_pasien,$nomor_antrian,$umur,$keluhan) {
+    public function update($nama_pasien,$nomor_urut,$umur,$gejala) {
         
         $conn = new C_koneksi ();
         
-        $sql = "UPDATE daftar SET nomor_antrian = '$nomor_antrian', umur = '$umur', keluhan = '$keluhan' WHERE nama_pasien = '$nama_pasien'";
+        $sql = "UPDATE daftar SET nomor_urut = '$nomor_urut', umur = '$umur', keluhan = '$gejala' WHERE nama_pasien = '$nama_pasien'";
 
         $query = mysqli_query($conn->conn(), $sql);
         // var_dump(sql);

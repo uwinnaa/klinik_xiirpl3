@@ -9,7 +9,7 @@ class C_koneksi{
     public function conn(){ 
 
         // membuat fungsi untuk terkoneksi kedalam database klinik_xiirpl3
-        $conn = mysqli_connect('localhost','root','','klinik_papaniel');
+        $conn = mysqli_connect('localhost','root','','klinik');
 
         //untuk mengecek apakah koneksi berhasil dibuat atau tidak
         if (!$conn) {

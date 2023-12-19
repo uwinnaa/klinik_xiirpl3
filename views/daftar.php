@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Dr. Johnson</title>
+        <title>hmmm</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -35,13 +35,13 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1><a href="index.html">Dr. Johnson</a></h1>
+                        <h1><a href="index.html">hmmm</a></h1>
                         <!-- <a class="brand" href="index.html" title="Home"><img alt="Logo" src="img/logo.png"></a> -->
                     </div>
                 </div>
 
                 <div class="col-md-12">
-                    <h2>Your Family Doctor</h2>
+                    <h2>suter</h2>
                 </div>
             </div>
         </section>

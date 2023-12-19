@@ -11,7 +11,7 @@ $pill = new C_Obat();
 <div class="container-fluid">
 
                         <div class="input-field">
-                                    <a href="V_tambah_obat.php" class="btn btn-primary">+Tambah Barang</a>
+                                    <a href="tambah_obat.php" class="btn btn-primary">+</a>
                                 </div>
 
                     
@@ -50,9 +50,9 @@ $pill = new C_Obat();
 
                                         <td>
                                     <center>
-                                        <a href="V_edit_obat.php?id_obat=<?= $b->id_obat ?>"><button type="button" class="btn btn-round btn-primary">Edit</button></a>
+                                        <a href="edit_obat.php?id_obat=<?= $b->id_obat ?>"><button type="button" class="btn btn-round btn-primary">Edit</button></a>
 
-                                        <a onclick="return confirm('apakah yakin data akan di hapus?')"href="../routers/r_obat.php?id_obat=<?= $b->id_obat ?>&aksi=hapus"><button type="button" class="btn btn-round btn-danger">Hapus</button></a>
+                                        <a onclick="return confirm('apakah yakin data akan di hapus?')"href="../routers/oobat.php?id_obat=<?= $b->id_obat ?>&aksi=hapus"><button type="button" class="btn btn-round btn-danger">Hapus</button></a>
                                         
                                     </center>
                                         </td>

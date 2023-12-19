@@ -28,7 +28,7 @@ class C_Obat{
         // var_dump($sql);
         // exit;
     if ($query){
-        echo "<script>alert('Data Berhasil Di Tambahkan');window.location='../views/v_obat.php'</script>";
+        echo "<script>alert('Data Berhasil Di Tambahkan');window.location='../views/obat.php'</script>";
         //"data berhasil ditambahkan ke tabel barang";
     }else {
         echo "data tidak berhasil ditambahkan ke tabel barang";
@@ -62,7 +62,7 @@ class C_Obat{
         // exit;
 
         if ($query){
-        echo "<script>alert('Data Berhasil Di Ubah');window.location='../views/v_obat.php'</script>";
+        echo "<script>alert('Data Berhasil Di Ubah');window.location='../views/obat.php'</script>";
         //echo "data berhasil diupdate ke tabel barang";
         }else {
         echo "data tidak berhasil diupdate ke tabel barang";
@@ -77,7 +77,7 @@ class C_Obat{
 
         mysqli_query($conn->conn(), $sql);
 
-        header("Location:../views/v_obat.php");
+        header("Location:../views/obat.php");
 
     }
     

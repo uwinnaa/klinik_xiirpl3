@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - login</title>
+    <title>login</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -80,7 +80,7 @@
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="index.php">Already have an account? Login!</a>
+                                <a class="small" href="index.php">awokwok</a>
                             </div>
                         </div>
                     </div>
